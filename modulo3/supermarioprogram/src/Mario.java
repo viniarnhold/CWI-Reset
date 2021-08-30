@@ -72,6 +72,24 @@ public class Mario {
         this.estamina = estamina;
     }
 
+    public void perderEstamina(){
+        this.estamina -= 10;
+        if(this.estamina < 0){
+            this.estamina = 0;
+        }
+    }
+
+    public void ganharEstamina(){
+        this.estamina += 5;
+        if(this.estamina > 100){
+            this.estamina = 100;
+        }
+    }
+
+    public void crescer(){
+        this.altura *= 2;
+    }
+
     public void caracteristicas(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);

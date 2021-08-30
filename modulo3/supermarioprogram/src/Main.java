@@ -16,5 +16,9 @@ public class Main {
         System.out.println("Status após Mario2 utilizar sua Super Força");
         mario2.caracteristicas();
 
+        mario.crescer();
+        System.out.println("Status após Mario utilizar o crescer");
+        mario.caracteristicas();
+
     }
 }
