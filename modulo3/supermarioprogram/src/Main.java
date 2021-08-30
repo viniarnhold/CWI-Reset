@@ -2,23 +2,19 @@ public class Main {
     public static void main(String[] args) {
         Mario mario = new Mario();
 
-        //mario.masculino = true;
-        //mario.corDaPele = "Clara";
-        //mario.altura = 1.55;
-        //mario.corDosOlhos = "Azuis";
-        mario.corDoCabelo = "Castanho";
-        mario.personalidade = "Alegre";
-        mario.usandoChapeu = true;
-        mario.forca = 80;
+        Mario mario2 = new Mario("Mario2", 45, 1.50);
 
         System.out.println("");
-        System.out.println("Antes de usar o Super Poder");
+        System.out.println("Construtor 1");
         mario.caracteristicas();
-
-        mario.superHumanStrength();
 
         System.out.println("");
-        System.out.println("Depois de usar o Super Poder:");
-        mario.caracteristicas();
+        System.out.println("Construtor 2");
+        mario2.caracteristicas();
+
+        mario2.superHumanStrength();
+        System.out.println("Status após Mario2 utilizar sua Super Força");
+        mario2.caracteristicas();
+
     }
 }
