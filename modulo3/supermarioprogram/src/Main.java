@@ -1,15 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Mario mario = new Mario();
+        Personagem mario = new Personagem("Mario", 40, 1.50);
+        Personagem luigi = new Personagem("Luigi", 35, 1.90);
 
-        mario.caracteristicas();
-
-        mario.pegarMoeda();
-
-        mario.morrer();
-        mario.morrer();
-
-        mario.caracteristicas();
+        mario.saltar();
+        luigi.saltar();
 
     }
 }

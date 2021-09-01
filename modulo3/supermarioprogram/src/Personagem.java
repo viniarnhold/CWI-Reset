@@ -1,4 +1,4 @@
-public class Mario {
+public class Personagem {
     private String nome;
     private Integer idade;
     private Double altura;
@@ -7,17 +7,7 @@ public class Mario {
     private Integer moedasColetadas;
     private Integer vidas;
 
-    public Mario() {
-        this.nome = "Mario Bross";
-        this.idade = 40;
-        this.altura = 1.50;
-        this.estamina = 100;
-        this.forca = 80;
-        this.moedasColetadas = 0;
-        this.vidas = 1;
-    }
-
-    public Mario(String nome, Integer idade, Double altura) {
+    public Personagem(String nome, Integer idade, Double altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
@@ -25,6 +15,16 @@ public class Mario {
         this.forca = 80;
         this.moedasColetadas = 0;
         this.vidas = 1;
+    }
+
+    public void saltar(){
+        if (this.nome == "Mario"){
+            System.out.println(this.nome + " fez um salto de " + (this.altura * 0.5) + "m");
+        } else if (this.nome == "Luigi"){
+            System.out.println(this.nome + " fez um salto de " + (this.altura * 2) + "m");
+        } else {
+            System.out.println(this.nome + " fez um salto de " + this.altura + "m");
+        }
     }
 
     public void perderEstamina(){
