@@ -57,9 +57,8 @@ public class Personagem {
 
     public void pegarMoeda(){
         this.moedasColetadas += 1;
-        if(this.moedasColetadas >= 10){
+        if(this.moedasColetadas % 10 == 0){
             this.vidas += 1;
-            this.moedasColetadas = 0;
         }
     }
 
