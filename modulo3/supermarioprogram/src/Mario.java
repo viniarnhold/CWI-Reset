@@ -1,7 +1,8 @@
 public class Mario extends Personagem {
-    private Boolean yoshi = false;
+    private Boolean montadoNoYoshi = false;
 
     public Mario(String nome, Integer idade, Double altura) {
+
         super(nome, idade, altura);
     }
 
@@ -11,11 +12,12 @@ public class Mario extends Personagem {
     }
 
     public void montarNoYoshi(){
-        this.yoshi = true;
+
+        this.montadoNoYoshi = true;
     }
 
     public void montado(){
-        if(this.yoshi){
+        if(this.montadoNoYoshi){
             System.out.println("Mário está montado no Yoshi!");
         } else {
             System.out.println("Mário não está montado no Yoshi!");
