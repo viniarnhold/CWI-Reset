@@ -1,11 +1,13 @@
 public abstract class Personagem {
     private String nome;
     private Integer idade;
-    private Double altura;
+    protected Double altura;
     private Integer forca;
     private Integer estamina;
     private Integer moedasColetadas;
     private Integer vidas;
+
+
 
     public Personagem(String nome, Integer idade, Double altura) {
         this.nome = nome;
@@ -21,9 +23,19 @@ public abstract class Personagem {
         if (this.nome == "Mario"){
             System.out.println(this.nome + " fez um salto de " + (this.altura * 0.5) + "m");
         } else if (this.nome == "Luigi"){
-            System.out.println(this.nome + " fez um salto de " + (this.altura * 2) + "m");
+            System.out.println(this.nome + " fez um salto de " + (this.altura * 0.5) + "m");
         } else {
-            System.out.println(this.nome + " fez um salto de " + this.altura + "m");
+            System.out.println(this.nome + " fez um salto de " + (this.altura + 0.5) + "m");
+        }
+    }
+
+    public void saltar(Double obstaculo){
+        if (this.nome == "Mario"){
+            System.out.println(this.nome + " fez um salto de " + (obstaculo * 1.5) + "m");
+        } else if (this.nome == "Luigi"){
+            System.out.println(this.nome + " fez um salto de " + (obstaculo * 1.5) + "m");
+        } else {
+            System.out.println(this.nome + " fez um salto de " + (obstaculo * 1.5) + "m");
         }
     }
 
@@ -62,9 +74,7 @@ public abstract class Personagem {
         }
     }
 
-    public void crescer(){
-        this.altura *= 2;
-    }
+    public abstract void crescer();
 
     public void caracteristicas(){
         System.out.println("-------CARACTERÍSTICAS-------");

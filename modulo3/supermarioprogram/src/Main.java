@@ -12,19 +12,11 @@ public class Main {
 
         jogo.jogar();
 
-        mario.montado();
-        mario.montarNoYoshi();
-        mario.montado();
+        luigi.saltar(2.00);
+        mario.crescer();
+        mario.crescer();
 
-        luigi.voar();
-
-        yoshi.comerFruta();
-        System.out.println("Velocidade do Yoshi é " + yoshi.getVelocidade());
-        yoshi.comerFruta();
-        System.out.println("Velocidade do Yoshi é " + yoshi.getVelocidade());
-        yoshi.comerFruta();
-        yoshi.comerFruta();
-        System.out.println("Velocidade do Yoshi é " + yoshi.getVelocidade());
+        mario.caracteristicas();
 
     }
 }

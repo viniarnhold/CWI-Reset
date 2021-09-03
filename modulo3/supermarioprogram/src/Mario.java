@@ -5,6 +5,11 @@ public class Mario extends Personagem {
         super(nome, idade, altura);
     }
 
+    @Override
+    public void crescer() {
+        this.altura *= 1.5;
+    }
+
     public void montarNoYoshi(){
         this.yoshi = true;
     }
